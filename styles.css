@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: rgb(247, 244, 244);
+    padding: 0;
+    margin: 0 auto;
+    
+    
+}
+.logo{
+    width: 172px;
+    height: 80px; 
+    padding: 10px 10px;
+    display: flex;
+    justify-self: center;
+
+}
+.navbar{
+    display: flex;
+    background-color: #2C3E50;    
+    justify-content: center;  
+    color: rgb(225, 236, 247);
+    padding: 7px 7px;    
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;   
+}
+@media (max-width: 768px){
+    li{
+        font-size: 12px;
+    }
+}
+
