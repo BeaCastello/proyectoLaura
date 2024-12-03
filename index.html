@@ -4,25 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/Logo6.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Papeleos en las redes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div>
-    <img class="logo" src="imagenes/nameLogo.png" alt="logo">
-</div>
-    <section class="navbar">
-        
-        <ul>
-            <li> Home</li>
-            <li>About us</li>
-            <li> Services</li>
-            <li>Contact</li>
-            <li>Blog</li>
-        </ul>
+    <header>
+        <div>
+            <img class="logo" src="imagenes/nameLogo.png" alt="logo">           
+        </div>
+   
+        <div class="navbar">
+            <ul>
+                <li> <a href="index.html">Inicio</a></li>
+                <li><a href="#quienes-somos">Quienes somos</a></li>
+                <li class="services"><a href="#servicios" id="services-Link">Servicios</a>
+                    <ul class="submenu" id="submenu">
+                        <li class="lista"><a href="#">Gestoría</a></li>
+                        <li class="lista"><a href="#">Apoyo a la comundad ...</a></li>
+                        <li class="lista"><a href="#">Formación de expediente</a></li>
+                        <li class="lista"><a href="#">Teleayuda</a></li>
+                        <li class="lista"><a href="#">Seguros médicos</a></li>
+                        <li class="lista"><a href="#">Legalización de documentos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto"> Contact</a></li>
+                <li><a href="#blog">Blog</a></li>                
+            </ul>
+          
+        </div>
+    </header>
+   
 
-    </section>
 </body>
 
 </html>
