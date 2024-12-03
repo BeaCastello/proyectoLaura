@@ -75,7 +75,9 @@ li:hover {
 .submenu  .lista {
     padding: 5px 0;
     color: white;
+    
 }
+
 @media (max-width: 768px){
     li{
         font-size: 12px;
