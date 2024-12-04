@@ -44,7 +44,8 @@ li a{
 
 li:hover {
     transform: scale(1.1);
-    background-color: rgb(236, 178, 70);
+    background-color: rgb(250, 192, 117);
+    ;
     transition: all 300ms ease;
     padding: 0 10px;
     border-radius: 5px;
@@ -96,6 +97,8 @@ li:hover {
         gap: 25px; 
     }
 }
+
+/* Banner */  
 .banner-container{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagenes/arraigo7.png);
     background-size: cover;
@@ -112,7 +115,7 @@ li:hover {
     justify-content: center;
     color:  rgb(247, 244, 240);
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     font-weight: bold;
     }
 
@@ -123,7 +126,8 @@ li:hover {
     width: 60%;
     display: flex;
     align-self: center;
-    font-weight: bold;    
+    font-weight: bold; 
+    line-height: 28px;   
 }
 .btn {
     padding: 10px 20px;
@@ -143,3 +147,30 @@ li:hover {
     color: white;
 }
 
+@media (max-width: 767px){
+    .banner-container > h1{
+        display: flex;
+        justify-content: center;
+        color:  rgb(247, 244, 240);
+        font-size: 26px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        }
+        .inf {
+            margin-bottom: 17px;
+            font-size: 16px;
+            color:  rgb(247, 244, 240);            
+            display: flex;
+            align-self: center;
+            font-weight: bold;  
+            text-align: justify;  
+        }
+        .btn {
+            padding: 10px 20px;
+            width: 31%;
+            display: flex;
+            align-self: center;
+        }        
+                    }
+
+    
