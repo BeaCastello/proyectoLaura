@@ -284,6 +284,13 @@ ul li {
     color: rgb(224, 153, 60);
 }
 
+.text-contactenos {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
 @media (max-width: 768px) {
     body {
         width: 100%;
@@ -298,7 +305,7 @@ ul li {
         gap: 20px;
     }
 
-    .contenido-derecho {
+    .contenido-izquierdo {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -312,7 +319,7 @@ ul li {
         margin-left: 30px;
     }
 
-    .photo-personal {
+    .contenido-derecho{
         display: flex;
         justify-content: center;
     }
@@ -338,12 +345,9 @@ ul li {
         text-align: justify;
     }
 
-    .contacto {
-        margin-top: 17px;
+    .contact {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-
     }
 
     .info-contact {
@@ -351,20 +355,23 @@ ul li {
         flex-direction: column;
 
     }
-    .fa-solid, .fas {
+
+    .fa-solid,
+    .fas {
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         margin-top: 10px;
     }
+    #contact-link1 {
+        display: flex;
 
-
-#contact-link1{
-    display: flex;
-
-}
+    }
     .redes-sociales {
         margin-left: 30px;
+        margin-top: -12px;
     }
-
-
+    .text-contactenos {
+       margin-right: 25px;
+    }
+    
 }
