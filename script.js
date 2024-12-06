@@ -1,13 +1,14 @@
-function toggleMenu() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('show');
-}
+//Botón leer más para la sección:¿Qué es un inmigrante?
 
-document.addEventListener('click', (e) => {
-    const menuHamburguesa = document.getElementById('menu-hamburguesa');
-    const navLinks = document.getElementById('nav-links');
+function toggleContent() {
+    const contentContainer = document.getElementById('content-container');
+    const button = document.querySelector('.toggle-btn');
 
-    if (!menuHamburguesa.contains(e.target) && !navLinks.contains(e.target)) {
-        navLinks.classList.remove('show');
+    if (contentContainer.style.display === 'flex') {
+        contentContainer.style.display = 'none';
+        button.textContent = 'Mostrar más';
+    } else {
+        contentContainer.style.display = 'flex';
+        button.textContent = 'Mostrar menos';
     }
-});
+}

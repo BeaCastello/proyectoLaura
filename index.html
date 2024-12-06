@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Papeleos en las redes</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -43,7 +44,6 @@
     </section>
 
     <!-- Quienes somos -->
-
     <section class="quienes-somos">
         <div class="contenido-izquierdo">
             <hr class="separator"> </hr>
@@ -79,9 +79,59 @@
                 </div>
             </div>
         </div>
-
         <div class="contenido-derecho">
             <img class="photo-Laura" src="imagenes/Photo_Laura13.png" alt="Imagen de Laura">
+        </div>
+    </section>
+
+
+    <!-- ¿Qué es un inmigrante? -->
+
+    <section class="immigration-container" id="inmigracion">
+        <h2> ¿Qué es un inmigrante? </h2>
+        <p class="intro-text">
+            Un inmigrante es una persona que sale de su país de origen a otro país para vivir allí, ya sea por motivos
+            de trabajo, estudios, seguridad, o para tener una mejor calidad de vida. La inmigración puede ser temporal o
+            permanente,
+            dependiendo de las leyes del país de destino y de las circunstancias personales del inmigrante.
+        </p>
+        <button class="toggle-btn" onclick="toggleContent()">Mostrar más</button>
+        <div class="content-container" id="content-container">
+            <div class="text-content">
+                <h3 class="additional-title">Impacto y Desafíos de la Inmigración</h3>
+                <p class="additional-text">
+                    <b>1. Barreras de idioma: </b> Si el inmigrante no habla el idioma local, esto puede dificultar la
+                    comunicación, el acceso a servicios y la integración social.<br></br>
+                    <b>2. Dificultades para encontrar trabajo: </b> En muchos casos, las personas enfrentan problemas
+                    para
+                    conseguir empleo, por no tener la experiencia laboral reconocida en el nuevo país, o debido a trabas
+                    legales o sociales.<br></br>
+                    <b>3. Adaptación cultural: </b> Las costumbres, valores y tradiciones del nuevo país pueden ser
+                    diferentes.
+                    Esto puede llevar a una sensación de desconexión o "choque cultural", lo cual puede afectar su
+                    bienestar emocional.<br></br>
+                    <b>4. Discriminación y xenofobia: </b> Los inmigrantes pueden enfrentar prejuicios y discriminación
+                    por ser
+                    extranjeros. Esto puede ir desde trato injusto, hasta incidentes de rechazo o exclusión en la
+                    sociedad.<br></br>
+                    <b>5. Dificultad para acceder a servicios básicos: </b> A veces, los inmigrantes tienen problemas
+                    para
+                    acceder a servicios de salud, educación o asistencia social, ya sea por barreras burocráticas, o
+                    porque no tienen el estatus migratorio adecuado.<br></br>
+                    <b></b>6. Nostalgia o soledad: </b> Estar lejos de su familia y amigos, además de no tener una red
+                    de apoyo,
+                    puede causar tristeza, soledad, e incluso afectar la salud mental.<br></br>
+                <p class="resume-text">
+                    En general, la experiencia de los inmigrantes puede ser desafiante, pero también es una oportunidad
+                    de crecimiento personal y profesional. Con el apoyo adecuado, muchos inmigrantes logran integrarse
+                    exitosamente y contribuir de manera valiosa a sus nuevas comunidades.</p>
+
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="imagenes/inmigración.png" alt="Imagen representativa de la inmigración"
+                    class="immigration-photo">
+            </div>
         </div>
     </section>
 
