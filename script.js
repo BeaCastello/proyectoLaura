@@ -46,3 +46,25 @@ function changeContent(title, imageSrc, title1, description) {
     duplicateTitle.classList.add('title1');
     textContainer.insertBefore(title1, descriptionElement);
 }
+
+// Carrusel services
+
+function showSlide(index) {
+    const slides = document.querySelectorAll(".slide");
+    const pages = document.querySelectorAll(".page");
+
+    slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${-(index * 100)}%)`;
+        pages[i].classList.remove("active");
+    });
+    pages[index].classList.add("active");
+}
+
+// Rotación imagen servicios 
+function toggleCardEffect(card) {
+    if (!card.classList.contains('clicked')) {
+        card.classList.add('clicked');
+    } else {
+        card.classList.remove('clicked');
+    }
+}

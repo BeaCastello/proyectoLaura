@@ -498,6 +498,10 @@ ul li {
     .additional-title {
         font-size: 18px;
     }
+    .immigration-container h2{
+        font-size: 28px;
+    }
+
 }
 
 /* ¿Que es un arraigo*/
@@ -527,6 +531,11 @@ ul li {
     margin-top: 20px;
 }
 
+.roots-title1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .roots-description {
     text-align: justify;
     width: 93%;
@@ -553,7 +562,6 @@ ul li {
 .vertical-line {
     width: 2px;
     height: 100%;
-    width: 2px;
     background-color: #000;
     margin: 0 20px;
 }
@@ -575,26 +583,196 @@ ul li {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
     }
 
     .vertical-line {
         display: none;
+        margin-left: 5px;
     }
 
     .image-card {
-        width: 100px;
         transition: transform 0.5s ease-in-out;
     }
+
     .left-section {
         flex: 1;
         margin-left: 28px;
     }
+
     .right-section {
-        
+        margin: 0;
+        justify-content: center;
+        align-self: center;
         display: flex;
-    flex-direction: column;
-    
-    
+        flex-direction: column;
+        margin-top: 20px;
     }
+
+    .image-card p {
+        margin-bottom: 30px;
+    }
+
+    .vertical-line {
+        display: flex;
+        width: 80%;
+        height: 3px;
+        justify-self: center;        
+    }
+    }
+
+    .roots-title {
+        margin-top: 0px;
+    }
+
+    .roots-title1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .image-card img {
+        width: 300px;
+        height: 170px;
+    }
+
+
+/* Texto animado */
+.animation {
+    margin-top: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: rgb(245, 238, 236);   
+    box-sizing: border-box;
+    padding: 10px 0;
+   }
+
+.animated-text {
+    display: inline-block;
+    padding-left: 100%;
+      font-size: 20px;
+    color: #333;
+    animation: scrollText 25s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .animation {
+        margin-top: 0px;
+    }
+}
+
+
+/*  Estilos Servicios  */
+.services-title {
+    display: flex;
+    color: black;
+    font-size: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.content-services {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 17px 0px 0px 0px;
+    min-width: 100%;
+}
+
+.content-services h2 {
+    font-size: 26px;
+    color: #00296b;
+    margin-bottom: 30px;
+    margin-top: 75px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.8s ease;
+    justify-content: center;
+}
+
+.card {
+    background-color: #dbe9f7;
+    margin: 50px;
+    overflow: hidden;
+    display: inline-block;
+    width: 300px;
+    transition: transform 1s ease-in-out;
+    transform-origin: center;
+    perspective: 1000px;
+
+}
+
+.card.clicked {
+    transform: rotateY(360deg);
+   }
+
+
+.card img {
+    width: 100%;
+}
+
+.card img:hover {
+    filter: grayscale(80%);
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.card a {
+    color: black;
+    font-size: 14px;
+    padding: 9px;
+    display: inline-block;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #00296b;
+    border-radius: 20%;
+    margin: 0 5px;
+    background-color: #e0e0e0;
+}
+
+.page.active {
+    background-color: #00296b;
+    color: white;
+
 }
