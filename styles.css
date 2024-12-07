@@ -499,6 +499,7 @@ ul li {
         font-size: 18px;
     }
 }
+
 /* ¿Que es un arraigo*/
 .hold-title {
     display: flex;
@@ -528,7 +529,8 @@ ul li {
 
 .roots-description {
     text-align: justify;
-    width: 90%;
+    width: 93%;
+    line-height: 25px;
 }
 
 .left-section {
@@ -542,7 +544,7 @@ ul li {
 }
 
 .main-image {
-    width: 90%;
+    width: 93%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -557,9 +559,11 @@ ul li {
 }
 
 .image-card img {
-    width: 230px;
+    width: 275px;
     border-radius: 8px;
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-card p {
@@ -571,24 +575,26 @@ ul li {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        gap:20px;
     }
 
     .vertical-line {
         display: none;
     }
 
-    .right-section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
     .image-card {
         width: 100px;
         transition: transform 0.5s ease-in-out;
     }
-}
-
-.image-card:hover {
-    transform: rotate(360deg) scale(1.1);
+    .left-section {
+        flex: 1;
+        margin-left: 28px;
+    }
+    .right-section {
+        
+        display: flex;
+    flex-direction: column;
+    
+    
+    }
 }
