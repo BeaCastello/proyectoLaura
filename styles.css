@@ -657,7 +657,20 @@ ul li {
     font-size: 22px;   
     text-align: center;
     align-items: center;
+    animation: scrollText 20s linear infinite;
   }
+  @keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
   @media (max-width: 768px) {
     .animated-text {
         font-size: 18px;
