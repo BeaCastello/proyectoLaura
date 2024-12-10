@@ -624,11 +624,17 @@ ul li {
 
 .roots-title {
     margin-top: 0px;
+    line-height: 35px;
+    margin-right: 30px;
+    text-align: start;
 }
 
 .roots-title1 {
     margin-top: 20px;
     margin-bottom: 10px;
+    line-height: 35px;
+    margin-right: 30px;
+    text-align: start;
 }
 
 .image-card img {
@@ -647,6 +653,7 @@ ul li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
+    align-items: center;
     
   }
   .animated-text {
@@ -658,6 +665,7 @@ ul li {
     text-align: center;
     align-items: center;
     animation: scrollText 20s linear infinite;
+    font-weight: 400;
   }
   @keyframes scrollText {
     0% {
@@ -668,8 +676,6 @@ ul li {
         transform: translateX(-100%);
     }
 }
-
-
 
   @media (max-width: 768px) {
     .animated-text {
@@ -691,124 +697,90 @@ ul li {
   
 
 /*  Estilos Servicios  */
-.services-title {
-    display: flex;
-    color: black;
-    font-size: 30px;
-    justify-content: center;
-    margin-top: 40px;
-}
-
 .content-services {
-    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .container-services {
     max-width: 1200px;
-    width: 100%;
-    padding: 17px 0px 0px 0px;
-    min-width: 100%;
-}
-
-.content-services h2 {
-    font-size: 26px;
-    color: #00296b;
-    margin-bottom: 30px;
-    margin-top: 75px;
-}
-
-.carousel {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    max-width: 100%;
-    flex-direction: column;
-
-}
-
-.slide {
-    display: flex;
-    transition: transform 0.8s ease;
-    min-width: 100%;
-    justify-content: center;
-}
-
-
-.card {
-    background-color: #dbe9f7;
-    margin: 50px;
-    overflow: hidden;
-    display: inline-block;
-    width: 300px;
-    transition: transform 1s ease-in-out;
-    transform-origin: center;
-    perspective: 1000px;
-
-}
-
-.card.clicked {
-    transform: rotateY(360deg);
-}
-
-
-.card img {
-    width: 100%;
-}
-
-.card img:hover {
-    filter: grayscale(80%);
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
-}
-
-.card h3 {
-    font-size: 18px;
-    color: black;
-    padding: 15px;
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    gap: 20px;
+  }
+  
+  .card {
+    position: relative; /* Needed for the hover effect */
+    overflow: hidden; /* Ensures the hover content stays within the card */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     text-align: center;
-}
-
-.card a {
-    color: black;
-    font-size: 14px;
-    padding: 9px;
-    display: inline-block;
-    text-decoration: none;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.card a:hover {
-    text-decoration: underline;
-}
-
-.page {
-    cursor: pointer;
-    display: inline-block;
-    padding: 8px 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
     font-size: 18px;
-    color: #00296b;
-    border-radius: 20%;
-    margin: 0 5px;
-    background-color: #e0e0e0;
-}
-
-.page.active {
-    background-color: #00296b;
-    color: white;
-
-}
-
-@media (max-width: 768px) {
-    .slide {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 200px;
-        flex: 1 1 calc(50% - 20px);
-        /* 2 cards per row */
-    }
-}
+    color: #333;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hover Effect */
+  .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Color de fonddo transparente */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    opacity: 0; /* Se oculte la descripción por defecto */
+    pointer-events: none; /* Evita la interacción cuando no es visible. */
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .description {
+    opacity: 1; 
+    pointer-events: auto; /* Enable interaction */
+  }
+  @media (max-width: 768px){
+    .carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Para pantalla más pequeña se vea de dos en dos */
+        gap: 20px;
+      }
+      
+  }
