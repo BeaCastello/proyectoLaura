@@ -646,28 +646,32 @@ ul li {
 .animated-text-container {
     position: relative;
     overflow: hidden;
-    width: 100%;    
+    width: 100%;
     height: 70px;
     border: transparent;
-    background-color: #f0c5c5;  
+    background-color: #f0c5c5;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     align-items: center;
-    
-  }
-  .animated-text {
-    position: absolute;
-   display: flex;
-   justify-self: center;   
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.animated-text {
+    position: relative;
+    display: flex;
+    justify-self: center;
     color: black;
-    font-size: 22px;   
+    font-size: 22px;
     text-align: center;
     align-items: center;
-    animation: scrollText 20s linear infinite;
+    animation: scrollText 10s linear infinite;
     font-weight: 400;
-  }
-  @keyframes scrollText {
+}
+
+@keyframes scrollText {
     0% {
         transform: translateX(0%);
     }
@@ -677,7 +681,7 @@ ul li {
     }
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .animated-text {
         font-size: 18px;
         line-height: 25px;
@@ -685,81 +689,87 @@ ul li {
         left: 0;
         align-items: center;
         display: flex;
-            }
-    .animated-text-container{
-        margin-top: 0px;
+    }
+
+    .animated-text-container {
+        margin-top: 30px;
         text-align: center;
         display: flex;
         align-items: center;
     }
-  }
-  
-  
+}
+
+
 
 /*  Estilos Servicios  */
 .content-services {
     background-color: #f9f9f9;
     padding: 20px;
-  }
-  
-  .container-services {
+}
+
+.container-services {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .carousel {
+}
+
+.carousel {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* Default: 3 columns */
     gap: 20px;
-  }
-  
-  .card {
-    position: relative; /* Needed for the hover effect */
-    overflow: hidden; /* Ensures the hover content stays within the card */
+}
+
+.card {
+    position: relative;
+    /* Needed for the hover effect */
+    overflow: hidden;
+    /* Ensures the hover content stays within the card */
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     transform: translateY(-5px);
-  }
-  
-  .card img {
+}
+
+.card img {
     width: 100%;
     height: auto;
     border-radius: 8px 8px 0 0;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     margin: 10px 0;
     font-size: 18px;
     color: #333;
-  }
-  
-  .card a {
+}
+
+.card a {
     display: inline-block;
     margin-top: 10px;
     color: #007BFF;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .card a:hover {
+    margin-bottom: 30px;
+}
+
+.card a:hover {
     text-decoration: underline;
-  }
-  
-  /* Hover Effect */
-  .description {
+}
+
+/* Hover Effect */
+.description {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Color de fonddo transparente */
+    background: rgba(0, 0, 0, 0.8);
+    /* Color de fonddo transparente */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -767,20 +777,256 @@ ul li {
     text-align: center;
     padding: 15px;
     font-size: 16px;
-    opacity: 0; /* Se oculte la descripción por defecto */
-    pointer-events: none; /* Evita la interacción cuando no es visible. */
+    opacity: 0;
+    /* Se oculte la descripción por defecto */
+    pointer-events: none;
+    /* Evita la interacción cuando no es visible. */
     transition: opacity 0.3s ease;
-  }
-  
-  .card:hover .description {
-    opacity: 1; 
-    pointer-events: auto; /* Enable interaction */
-  }
-  @media (max-width: 768px){
+    line-height: 24px;
+}
+
+.card:hover .description {
+    opacity: 1;
+    pointer-events: auto;
+    /* Enable interaction */
+}
+
+@media (max-width: 768px) {
     .carousel {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Para pantalla más pequeña se vea de dos en dos */
+        grid-template-columns: repeat(2, 1fr);
+        /* Para pantalla más pequeña se vea de dos en dos */
         gap: 20px;
-      }
-      
+    }
+
+}
+
+/*  Estilos Contactos */
+.container-contact {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+    background-image: url('imagenes/imgContacto.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+}
+
+.content {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.form-subtitle {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-contactForm,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.terms-label {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sendButton {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .form-subtitle {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .input-contactForm,
+    textarea {
+        font-size: 13px;
+    }
+
+    .sendButton {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-title {
+        font-size: 18px;
+    }
+
+    .form-subtitle {
+        font-size: 14px;
+    }
+
+    .sendButton {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.services-title{
+    position: relative;
+    overflow: hidden;
+    width: 100%;    
+    height: 70px;
+    border: transparent;
+    background-color: #f0c5c5;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 26px;
   }
+.container-contact {
+    background: url('imagenes/contactanos.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin-top: 90px;
+   
+}
+.form-title {
+    display: flex;
+    color: black;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.form-subtitle {
+    display: flex;
+    color: black;
+    font-size: 20px;
+    align-items: right;
+    margin-top: 10px;
+}
+#contactForm {
+    background-color: #dbe9f7;;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    width: 400px;  
+}
+#contactForm label{
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;   
+    color: #333;
+}
+.input-contactForm,
+#contactForm textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    box-sizing: border-box;
+    outline: none;
+    display: flex;
+    margin-left: 40px;
+}
+.sendButton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2C3E50;
+    color: white;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background-color: rgb(28, 71, 136);
+}*/

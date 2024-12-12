@@ -60,11 +60,21 @@ function showSlide(index) {
     pages[index].classList.add("active");
 }
 
-// Rotación imagen servicios 
-function toggleCardEffect(card) {
-    if (!card.classList.contains('clicked')) {
-        card.classList.add('clicked');
-    } else {
-        card.classList.remove('clicked');
-    }
-}
+// Enlace con emailjs
+
+(function () {
+    emailjs.init("zbgwQc95PFCFL9D6Y");
+})();
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_e4rgq0q', 'template_bjg3pgj', this)
+        .then(function () {
+            alert('Correo enviado con éxito!');
+        }, function (error) {
+            alert('Error al enviar el correo: ' + JSON.stringify(error));
+        });
+});
+
+

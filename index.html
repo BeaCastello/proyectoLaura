@@ -9,6 +9,7 @@
     <title>Papeleos en las redes</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -207,64 +208,106 @@
     <!-- Services -->
     <div class="content-services" id="services">
         <div class="container-services">
-          <div class="carousel">
-            <div class="card">
-              <img src="imagenes/servicios2.png" alt="Imagen de Servicio">
-              <div class="description">
-                Gestoría especializada en trámites de extranjería, ofreciendo asesoría y gestión profesional para simplificar y agilizar procesos legales y documentales.
-              </div>
-              <h3>Gestoría</h3>
-              <a href="#">LEER MÁS »</a>
-            </div>
-            <div class="card">
-              <img src="imagenes/servicios1.png" alt="Service 2">
-              <div class="description">
-                Apoyo integral a la comunidad extranjera, brindando orientación y soluciones para facilitar su integración y gestión de trámites legales y documentales.
-              </div>
-              <h3>Apoyo a la comunidad extranjera</h3>
-              <a href="#">LEER MÁS »</a>
-            </div>
-            <div class="card">
-              <img src="imagenes/servicios3.png" alt="Service 3">
-              <div class="description">
-                Preparación completa de expedientes de extranjería con asesoría profesional para trámites migratorios, con asesoría profesional en cada paso del proceso.
-              </div>
-              <h3>Formación de expediente</h3>
-              <a href="#">LEER MÁS »</a>
-            </div>
-            <div class="card">
-                <img src="imagenes/servicios4.png" alt="Service 4">
-                <div class="description">
-                    Ofrecemos orientación personalizada y soluciones rápidas para trámites de extranjería, todo a través de una asesoría remota eficiente y accesible.
+            <div class="carousel">
+                <div class="card">
+                    <img src="imagenes/servicios2.png" alt="Imagen de Servicio">
+                    <div class="description">
+                        Gestoría especializada en trámites de extranjería, ofreciendo asesoría y gestión profesional
+                        para simplificar y agilizar procesos legales y documentales.
+                    </div>
+                    <h3>Gestoría</h3>
+                    <a href="#">LEER MÁS »</a>
                 </div>
-                <h3>Teleayuda</h3>
-                <a href="#">LEER MÁS »</a>
-              </div>
-              <div class="card">
-                <img src="imagenes/servicios5.png" alt="Service 3">
-                <div class="description">
-                    Servicios de seguros médicos diseñados para proteger tu salud y bienestar, ofreciendo cobertura personalizada y acceso a atención médica de calidad en cualquier momento.
+                <div class="card">
+                    <img src="imagenes/servicios1.png" alt="Service 2">
+                    <div class="description">
+                        Apoyo integral a la comunidad extranjera, brindando orientación y soluciones para facilitar su
+                        integración y gestión de trámites legales y documentales.
+                    </div>
+                    <h3>Apoyo a la comunidad extranjera</h3>
+                    <a href="#">LEER MÁS »</a>
                 </div>
-                <h3>Seguros médicos</h3>
-                <a href="#">LEER MÁS »</a>
-              </div>
-              <div class="card">
-                <img src="imagenes/servicios3.png" alt="Service 3">
-                <div class="description">
-                  Formación de expedientes de manera ágil y eficiente.
+                <div class="card">
+                    <img src="imagenes/servicios3.png" alt="Service 3">
+                    <div class="description">
+                        Preparación completa de expedientes de extranjería con asesoría profesional para trámites
+                        migratorios, con asesoría profesional en cada paso del proceso.
+                    </div>
+                    <h3>Formación de expediente</h3>
+                    <a href="#">LEER MÁS »</a>
                 </div>
-                <h3>Formación de expediente</h3>
-                <a href="#">LEER MÁS »</a>
-              </div>
-          </div>
+                <div class="card">
+                    <img src="imagenes/servicios4.png" alt="Service 4">
+                    <div class="description">
+                        Ofrecemos orientación personalizada y soluciones rápidas para trámites de extranjería, todo a
+                        través de una asesoría remota eficiente y accesible.
+                    </div>
+                    <h3>Teleayuda</h3>
+                    <a href="#">LEER MÁS »</a>
+                </div>
+                <div class="card">
+                    <img src="imagenes/servicios5.png" alt="Service 3">
+                    <div class="description">
+                        Servicios de seguros médicos diseñados para proteger tu salud y bienestar, ofreciendo cobertura
+                        personalizada y acceso a atención médica de calidad en cualquier momento.
+                    </div>
+                    <h3>Seguros médicos</h3>
+                    <a href="#">LEER MÁS »</a>
+                </div>
+                <div class="card">
+                    <img src="imagenes/servicios3.png" alt="Service 3">
+                    <div class="description">
+                        Formación de expedientes de manera ágil y eficiente.
+                    </div>
+                    <h3>Formación de expediente</h3>
+                    <a href="#">LEER MÁS »</a>
+                </div>
+            </div>
         </div>
-      </div>
-      
-    <!--
-    <div>
-        <p class="services-title"> Tu tranquilidad es nuestro compromiso. ¡Contáctanos ahora para más detalles!
-        </p>
-    </div>-->
+    </div>
+
+    <!-- Contacto -->
+
+     <!-- Texto animado -->
+
+    <div class="animated-text-container">
+        <div class="animated-text">
+            Tu tranquilidad es nuestro compromiso. ¡Contáctanos ahora para más detalles!
+        </div>
+    </div>
+         
+        
+    <div class="container-contact">
+        <div class="content">
+            <p class="form-title">NO ESTAS SOLO(A)</p>
+            <p class="form-subtitle">Estamos aquí para ayudarte</p><br></br>
+
+            <form id="contactForm">
+                <label for="name"><b>Nombre:</b></label>
+                <input class="input-contactForm" type="text" id="name" name="name" required>
+
+                <label class="email" for="email"><b>E-mail:</b></label>
+                <input class="input-contactForm" type="email" id="email" name="email" required>
+
+                <label class="phone" for="teléfono"><b>Número de teléfono:</b></label>
+                <input class="input-contactForm" type="tel" name="phone" required>
+
+                <label class="consulta" for="consulta"><b>Mensaje:</b></label>
+                <textarea id="consulta" name="consulta" required></textarea>
+
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Acepto el <a href="#">aviso legal/política de privacidad</a>.
+                </label>
+
+                <button class="sendButton" type="submit" id="sendButton">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
 </body>
 
 </html>
