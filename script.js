@@ -77,8 +77,26 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         });
 });
 
+
+
+
+
 function toggleChatPopup() {
     const popup = document.getElementById('chatPopup');
     popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
 }
 
+(function () {
+    emailjs.init("zbgwQc95PFCFL9D6Y");
+})();
+
+document.getElementById('input-container').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_o466etn","template_rzjqc3b"), this
+        .then(function () {
+            alert('Correo enviado con éxito!');
+        }, function (error) {
+            alert('Error al enviar el correo: ' + JSON.stringify(error));
+        });
+    });
