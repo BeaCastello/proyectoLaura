@@ -77,4 +77,8 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         });
 });
 
+function toggleChatPopup() {
+    const popup = document.getElementById('chatPopup');
+    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+}
 

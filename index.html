@@ -268,15 +268,15 @@
 
     <!-- Contacto -->
 
-     <!-- Texto animado -->
+    <!-- Texto animado -->
 
     <div class="animated-text-container">
         <div class="animated-text">
             Tu tranquilidad es nuestro compromiso. ¡Contáctanos ahora para más detalles!
         </div>
     </div>
-         
-        
+
+
     <div class="container-contact">
         <div class="content">
             <p class="form-title">NO ESTAS SOLO(A)</p>
@@ -305,9 +305,21 @@
         </div>
     </div>
 
+    <!-- Botón circular -->
+    <button class="chat-button" onclick="toggleChatPopup()"></button>
 
-
-
+    <!-- Ventana emergente -->
+    <div class="chat-popup" id="chatPopup">
+        <header>Chatea con nosotros</header>
+        <div class="content">
+            <p>Hola, soy tu asistente. ¿En qué puedo ayudarte?</p>
+            <p>Escribe tu mensaje y haz clic en enviar.</p>
+        </div>
+        <div class="input-container">
+            <input type="text" id="userMessage" placeholder="Escribe tu mensaje...">
+            <button onclick="sendToMessenger()">Enviar</button>
+        </div>
+    </div>
 </body>
 
 </html>

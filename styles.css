@@ -933,100 +933,79 @@ textarea {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.services-title{
-    position: relative;
-    overflow: hidden;
-    width: 100%;    
-    height: 70px;
-    border: transparent;
-    background-color: #f0c5c5;  
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    line-height: 26px;
-  }
-.container-contact {
-    background: url('imagenes/contactanos.png') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 120vh;
+/* Botón circular con imagen */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url('imagenes/Photo_Laura14.png'); 
     background-size: cover;
     background-position: center;
-    padding: 50px;
-    margin-top: 90px;
-   
-}
-.form-title {
-    display: flex;
-    color: black;
-    font-size: 30px;
-    margin-top: 20px;
-}
-
-.form-subtitle {
-    display: flex;
-    color: black;
-    font-size: 20px;
-    align-items: right;
-    margin-top: 10px;
-}
-#contactForm {
-    background-color: #dbe9f7;;
-    display: flex;
-    flex-direction: column;
-    gap: 5px; 
-    width: 400px;  
-}
-#contactForm label{
-    font-weight: bold;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 40px;   
-    color: #333;
-}
-.input-contactForm,
-#contactForm textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 80%;
-    box-sizing: border-box;
-    outline: none;
-    display: flex;
-    margin-left: 40px;
-}
-.sendButton {
-    margin-top: 15px;
-    padding: 10px 20px;
-    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border: none;
-    border-radius: 4px;
-    background-color: #2C3E50;
-    color: white;
     cursor: pointer;
 }
 
-.sendButton:hover {
-    background-color: rgb(28, 71, 136);
-}*/
+/* Ventana emergente */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+/* Encabezado */
+.chat-popup header {
+    background-color: #0078ff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.chat-popup .content {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.chat-popup .content p {
+    margin: 10px 0;
+}
+
+/* Input y botón de enviar */
+.chat-popup .input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-popup .input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.chat-popup .input-container button {
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-popup .input-container button:hover {
+    background-color: #005bb5;
+}
