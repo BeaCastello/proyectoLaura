@@ -817,15 +817,14 @@ ul li {
 }
 
 .content {
-    width: 100%;
-    max-width: 500px;
+    width: 450px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     box-sizing: border-box;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -834,11 +833,13 @@ ul li {
     font-weight: bold;
     color: #333;
     text-align: center;
+    margin-top: 10px;
 }
 
 .form-subtitle {
     font-size: 18px;
     color: #555;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -852,16 +853,18 @@ label {
     font-weight: bold;
     font-size: 14px;
     color: #333;
+    margin-left: 20px;
 }
 
 .input-contactForm,
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    margin-left: 20px;
 }
 
 textarea {
@@ -894,7 +897,7 @@ textarea {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .content {
-        padding: 15px;
+        padding: 10px 0px 10px 0px;
     }
 
     .form-title {
@@ -972,13 +975,17 @@ textarea {
 }
 
 .chat-popup .content {
-    padding: 10px;
     font-size: 14px;
     color: #333;
 }
 
 .chat-popup .content p {
     margin: 10px 0;
+    margin-left: 16px;
+    margin-right: 12px;
+    text-align: left;
+    line-height: 20px;
+    margin-top: 20px;
 }
 
 /* Input y botón de enviar */
