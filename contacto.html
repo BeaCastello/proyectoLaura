@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papeleos en las redes</title>
+    <link rel="icon" href="imagenes/Logo6.png" type="image/png">
+    <link rel="stylesheet" href="contacto1.css">
+    <script src="script1.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <img class="Logo" src="imagenes/nameLogo1.png" alt="Logo"></img>
+        <span class="hamburguesa" id="menu-hamburguesa" onclick="toggleMenu()">&#9776;</span>
+        <ul class="navlinks" id="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#quienes-somos">Quienes somos</a></li>
+            <li class="services"><a href="#services" id="services-Link">Servicios</a>
+                <ul class="submenu" id="submenu">
+                    <li class="lista"><a href="#">Gestoría</a></li>
+                    <li class="lista"><a href="#">Apoyo a la comundad ...</a></li>
+                    <li class="lista"><a href="#">Formación de expediente</a></li>
+                    <li class="lista"><a href="#">Teleayuda</a></li>
+                    <li class="lista"><a href="#">Seguros médicos</a></li>
+                    <li class="lista"><a href="#">Legalización de documentos</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </header>
+    
+    <section class="banner" id="inicio">
+        <video autoplay muted loop class="banner-video">
+            <source src="imagenes/banner4.mp4" type="video/mp4">
+        </video>
+        <div class="banner-text">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte</p>
+        </div>
+    </section>
+
+    <!-- Información de contacto-->
+
+    <div class="container-company">
+        <div>
+            <h2 class="info-title">Contáctanos</h2>
+        </div>
+        <div>
+            <p class="info-subtitle"> Síguenos en nuestras redes sociales o ponte en contacto con nosotros y te
+                atenderemos enseguida.
+            </p>
+        </div>
+    </div>
+
+    <!-- Columna izquierda: Formulario -->
+    <div class="contact-section">
+
+        <div class="contact-form">
+            <h2>Consultanos sin compromiso</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Número de teléfono" name="phone" required>
+                    <p class="text-client">¿Eres cliente? </p><select name="select" required>
+                        <option value="Si" selected>Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" placeholder="Mensaje" name="consulta" required></textarea>
+                </div>
+                <input type="checkbox" id="terms" name="terms" required> Acepto el <a href="#" class="link-terms">aviso
+                    legal/política de privacidad</a>.
+
+                <button class="sendButton" type="submit" id="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Columna derecha: Información -->
+        <div class="contact-info">
+            <img class="Logo1" src="imagenes/nameLogo.png" alt="Logo"></img>
+            <div class="company-data">
+                <p>+34 642 64 35 99</p>
+                <p>Castellón<br>España</p>
+                <a
+                    href="https://www.google.es/maps/place/Espa%C3%B1a/@38.0596363,-7.9672801,6.26z/data=!4m6!3m5!1s0xc42e3783261bc8b:0xa6ec2c940768a3ec!8m2!3d40.463667!4d-3.74922!16zL20vMDZta2o?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D">Mapa
+                    de España</a>
+            </div>
+            <!-- Globo e información -->
+            <div>
+                <img src="imagenes/globoMundo.gif" alt="Globo Mundo" class="globe-container">-->  
+                <img class="views-counter" alt="Hits" src="https://hits.sh/papeleosenlasredes.com.svg?style=flat-square&label=Visitas&labelColor=343c44&" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

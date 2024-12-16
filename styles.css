@@ -977,9 +977,10 @@ textarea {
 .chat-popup .content {
     font-size: 14px;
     color: #333;
+    
 }
 
-.chat-popup .content p {
+.chat-popup  {
     margin: 10px 0;
     margin-left: 16px;
     margin-right: 12px;
@@ -987,6 +988,7 @@ textarea {
     line-height: 20px;
     margin-top: 20px;
 }
+
 
 /* Input y botón de enviar */
 .chat-popup .input-container {
