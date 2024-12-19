@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(247, 244, 244);
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif
+}
+
+.logo {
+    width: 172px;
+    height: 80px;
+    padding: 10px 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.navbar {
+    display: flex;
+    background-color: #1f272e;
+    justify-content: center;
+    color: rgb(225, 236, 247);
+    padding: 10px 0px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+li a {
+    color: beige;
+    text-decoration: none;
+}
+
+li:hover {
+    transform: scale(1.1);
+    background-color: rgb(250, 192, 117);
+
+    transition: all 300ms ease;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: black;
+    margin-left: 10px;
+}
+
+ul li {
+    color: rgb(225, 236, 247);
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    /* Para que el submenu se posicione con respecto a su padre */
+}
+
+.submenu {
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    background-color: #1f272e;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 220px;
+}
+
+.services:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 5px 0;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    li {
+        font-size: 12px;
+    }
+
+    .submenu {
+        font-size: 14px;
+        display: none;
+        position: absolute;
+        list-style: none;
+        padding: 10px;
+        border-radius: 5px;
+        width: 170px;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+        margin-right: 10px;
+    }
+}

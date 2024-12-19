@@ -944,7 +944,7 @@ textarea {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-image: url('imagenes/Photo_Laura14.png'); 
+    background-image: url('imagenes/Photo_Laura14.png');
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -965,6 +965,7 @@ textarea {
     border: 1px solid #ccc;
     overflow: hidden;
 }
+
 /* Encabezado */
 .chat-popup header {
     background-color: #0078ff;
@@ -977,10 +978,10 @@ textarea {
 .chat-popup .content {
     font-size: 14px;
     color: #333;
-    
+
 }
 
-.chat-popup  {
+.chat-popup {
     margin: 10px 0;
     margin-left: 16px;
     margin-right: 12px;
@@ -989,6 +990,10 @@ textarea {
     margin-top: 20px;
 }
 
+.welcome-text {
+    margin-right: 190px;
+    margin-bottom: 20px;
+}
 
 /* Input y botón de enviar */
 .chat-popup .input-container {
@@ -1017,4 +1022,101 @@ textarea {
 
 .chat-popup .input-container button:hover {
     background-color: #005bb5;
+}
+
+/* Estilos footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.footer-redes {
+    line-height: 40px;
+    margin-left: 40px;
+
+}
+
+#redes-sociales {
+    color: white;
+    margin-top: 5px;
+    width: 20px;
+}
+
+.footer-menu a:hover {
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.footer-menu {
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+    padding-left: 40px;
+
+}
+
+.btnarrow {
+    background-color: rgb(37, 211, 102);
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: transform 0.2s;
+    animation: pulse 1.5s infinite;
+    margin-left: 30px;
+}
+
+.text-copyright {
+    margin-left: 40px;
+}
+
+
+
+/* Botó Siguenos en movimento */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .footer-container {
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .footer-redes {
+        line-height: 30px;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+.footer-menu{
+    margin-left: 0px;
+    margin-right: 20px;
+}
+    .text-copyright {
+        font-size: 14px;
+        margin-left:0px;
+    }
+
+
 }
