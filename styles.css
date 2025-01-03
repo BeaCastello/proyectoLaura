@@ -714,16 +714,13 @@ ul li {
 
 .carousel {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Default: 3 columns */
+    grid-template-columns: repeat(3, 1fr);    
     gap: 20px;
 }
 
 .card {
-    position: relative;
-    /* Needed for the hover effect */
+    position: relative;    
     overflow: hidden;
-    /* Ensures the hover content stays within the card */
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -769,7 +766,6 @@ ul li {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    /* Color de fonddo transparente */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -778,9 +774,7 @@ ul li {
     padding: 15px;
     font-size: 16px;
     opacity: 0;
-    /* Se oculte la descripción por defecto */
     pointer-events: none;
-    /* Evita la interacción cuando no es visible. */
     transition: opacity 0.3s ease;
     line-height: 24px;
 }
@@ -788,14 +782,12 @@ ul li {
 .card:hover .description {
     opacity: 1;
     pointer-events: auto;
-    /* Enable interaction */
-}
+   }
 
 @media (max-width: 768px) {
     .carousel {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Para pantalla más pequeña se vea de dos en dos */
         gap: 20px;
     }
 
@@ -1025,98 +1017,106 @@ textarea {
 }
 
 /* Estilos footer */
-.footer {
-    background-color: #333;
-    color: #fff;
+.form-section {
+    background-color: var(--form-background);
+    color: var(--form-text-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-section form {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-section label {
+    font-weight: bold;
+}
+
+.form-section input, .form-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.form-section input[type="checkbox"] {
+    width: auto;
+}
+
+.form-section button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-section button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .footer-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-redes {
-    line-height: 40px;
-    margin-left: 40px;
-
+.footer-section {
+    flex: 1;
+    min-width: 200px;
 }
 
-#redes-sociales {
-    color: white;
-    margin-top: 5px;
-    width: 20px;
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
-.footer-menu a:hover {
+.footer-section a {
+    color: var(--footer-text);
     text-decoration: none;
-    line-height: 25px;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
-.footer-menu {
-    text-decoration: none;
-    color: white;
-    line-height: 25px;
-    padding-left: 40px;
-
+.footer-section a:hover {
+    text-decoration: underline;
 }
 
-.btnarrow {
-    background-color: rgb(37, 211, 102);
-    color: white;
-    border-radius: 10px;
-    border-style: none;
-    padding: 10px;
-    font-size: 16px;
-    transition: transform 0.2s;
-    animation: pulse 1.5s infinite;
-    margin-left: 30px;
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.text-copyright {
-    margin-left: 40px;
+.footer-social a {
+    color: var(--footer-text);
+    font-size: 1.5rem;
 }
 
-
-
-/* Botó Siguenos en movimento */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+.footer-social a:hover {
+    color: var(--primary-color);
 }
 
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .footer-container {
-        justify-content: space-around;
-        text-align: left;
-    }
-
-    .footer-redes {
-        line-height: 30px;
-        font-size: 12px;
-        margin-left: 20px;
-    }
-
-.footer-menu{
-    margin-left: 0px;
-    margin-right: 20px;
-}
-    .text-copyright {
-        font-size: 14px;
-        margin-left:0px;
-    }
-
-
-}

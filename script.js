@@ -100,3 +100,5 @@ document.getElementById('input-container').addEventListener('submit', function (
             alert('Error al enviar el correo: ' + JSON.stringify(error));
         });
     });
+
+    

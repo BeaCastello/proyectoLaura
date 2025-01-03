@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Papeleos en las redes</title>
     <link rel="stylesheet" href="quienesomos.css">    
-    <script src="script.js" defer></script>
+    <script src="script2.js" defer></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
@@ -33,16 +33,84 @@
             </ul>
         </div>
     </header>
+<section class="container-banner">
+    <section>
+        <h1>¿Quiénes Somos?</h1>
+    </section>
 
-    <section class="banner" id="inicio">
-        <video autoplay muted loop class="banner-video">
-            <source src="imagenes/banner4.mp4" type="video/mp4">
-        </video>
-        <div class="banner-text">
-            <h1>Contáctanos</h1>
-            <p>Estamos aquí para ayudarte</p>
+    <div class="container">
+        <section class="about-section">
+            <h2>Nuestra Misión</h2>
+            <p>Brindamos orientación legal adaptada a cada caso, garantizando soluciones eficaces y claras en el
+                ámbito migratorio.</p>
+        </section>
+
+        <section class="team">
+            <div class="team-member">
+                <img src="imagenes/Photo Laura1.png" alt="Miembro del equipo">
+                <h3>Laura Vázquez</h3>
+                <p>Asesora legal especializada en trámites de extranjería y gestiones</p>
+            </div>
+            <div class="team-member">
+                <img src="imagenes/servicios6.png" style="width: 355px;" alt="Miembro del equipo">
+                <h3>Ana López</h3>
+                <p>Directora de Marketing. Experta en estrategias digitales.</p>
+            </div>
+            <div class="team-member">
+                <img src="imagenes/servicios4.png"  style="width: 355px;" alt="Miembro del equipo">
+                <h3>Carlos Gómez</h3>
+                <p>Jefe de Desarrollo. Especialista en software y aplicaciones.</p>
+            </div>
+        </section>
+    </div>
+
+    <section class="contact-section">
+        <img src="imagenes/imagen-contactanos.png" alt="Oficina">
+        <div class="contact-details">
+            <h3>Contáctanos</h3>
+            <p><strong>Dirección:</strong> Castellón de la Plana, 12004</p>
+            <p><strong>Teléfono:</strong> <a href="tel:+34 642 64 35 99">642 64 35 99</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@pechmanlaw.com">admin@papeleosenlasredes.com </a></p>
         </div>
     </section>
+
+    <section class="form-section">
+        <h2>¿Cómo podemos ayudarte?</h2>
+        <hr class= "separator-quienesomos"></hr>
+        <form>
+            <div>
+                <label for="first-name">Nombre</label>
+                <input type="text" id="first-name" placeholder="Tu nombre" required>
+            </div>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div>
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" placeholder="Tu teléfono">
+            </div>
+            <div>
+                <label for="message">Mensaje</label>
+                <textarea id="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="disclaimer" required>
+                <label for="disclaimer">He leído y acepto las condiciones</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</div>
+
+
+
+</section>
+
+    <footer>
+        <p>&copy; 2025 ¿Quiénes Somos? Todos los derechos reservados.</p>
+    </footer>
 
 
 
