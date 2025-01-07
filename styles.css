@@ -714,12 +714,12 @@ ul li {
 
 .carousel {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);    
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .card {
-    position: relative;    
+    position: relative;
     overflow: hidden;
     background: #fff;
     border: 1px solid #ddd;
@@ -782,7 +782,7 @@ ul li {
 .card:hover .description {
     opacity: 1;
     pointer-events: auto;
-   }
+}
 
 @media (max-width: 768px) {
     .carousel {
@@ -1017,106 +1017,72 @@ textarea {
 }
 
 /* Estilos footer */
-.form-section {
-    background-color: var(--form-background);
-    color: var(--form-text-color);
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 2rem 0;
-}
-
-.form-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.form-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.form-section label {
-    font-weight: bold;
-}
-
-.form-section input, .form-section textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.form-section input[type="checkbox"] {
-    width: auto;
-}
-
-.form-section button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.form-section button:hover {
-    background-color: #45a049;
-}
-
-footer {
-    background-color: var(--footer-bg);
-    color: var(--footer-text);
-    padding: 2rem 1rem;
-    text-align: center;
-    margin-top: 2rem;
-}
-
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
+    margin-top: 20px;
     justify-content: space-between;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.footer-section {
-    flex: 1;
-    min-width: 200px;
+.footer-section-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
 }
 
-.footer-section h4 {
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-.footer-section a {
-    color: var(--footer-text);
+.footer-section-enlaces a {
     text-decoration: none;
     display: block;
     margin-bottom: 0.5rem;
+    color: #000;
 }
 
-.footer-section a:hover {
-    text-decoration: underline;
+.footer-section-enlaces h4 {
+    margin-bottom: 1rem;
 }
 
-.footer-social {
+.footer-section-enlaces a:hover {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #084786;
+}
+.footer-section-datacompany{
+display: flex;
+flex-direction: column;
+line-height: 30px;
+
+}
+
+.inf-company a{
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
 }
-
-.footer-social a {
-    color: var(--footer-text);
-    font-size: 1.5rem;
+.inf-company{
+    display: flex;
+    color: #000;
+   
 }
-
-.footer-social a:hover {
-    color: var(--primary-color);
+.inf-company a:hover{
+    color: #084786;
 }
+.redes{
+    margin-bottom: 10px;
+}
+.footer-section-social{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+  }
 
+  .footer-section-social a{
+    color: #000;
+    font-size: 1.3rem;
+    }
+
+    .footer-section-social a:hover{
+        color: #000;
+        color: #084786;
+        }
+    
