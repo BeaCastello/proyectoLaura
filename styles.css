@@ -809,12 +809,12 @@ ul li {
 }
 
 .content {
-    width: 450px;
+   /*  width: 450px;*/
     background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    margin-left: 19px;
+   /* margin-left: 19px;*/
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -1017,76 +1017,71 @@ textarea {
 }
 
 /* Estilos footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+}
+
 .footer-container {
     display: flex;
-    margin-top: 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-section-enlaces {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-}
-
-.footer-section-enlaces a {
+.footer-container a {
+    color: #fff;
     text-decoration: none;
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #000;
+    font-size: 14px;
 }
 
-.footer-section-enlaces h4 {
-    margin-bottom: 1rem;
+.footer-container a:hover {
+    text-decoration: underline;
 }
 
-.footer-section-enlaces a:hover {
-    text-decoration: none;
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #084786;
-}
-.footer-section-datacompany{
-display: flex;
-flex-direction: column;
-line-height: 30px;
-
+.footer-section-enlaces, .footer-section-datacompany, .footer-section-social {
+    flex: 1 1 200px; 
+    min-width: 150px;
 }
 
-.inf-company a{
-    display: flex;
-    text-decoration: none;
-    color: #000;
-    margin-left: 10px;
+.footer-section-copy {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 12px;
 }
-.inf-company{
-    display: flex;
-    color: #000;
-   
-}
-.inf-company a:hover{
-    color: #084786;
-}
-.redes{
-    margin-bottom: 10px;
-}
-.footer-section-social{
-    display: flex;
-    flex-direction: column;
-    color: #000;
-  }
 
-  .footer-section-social a{
-    color: #000;
-    font-size: 1.3rem;
+/* Estilo para redes sociales */
+.footer-section-social a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+/* Responsivo: pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .footer-section-social a:hover{
-        color: #000;
-        color: #084786;
-        }
-        .footer-section-copy{
-            margin-top: 20px;
-            margin-right: 30px;
-        }
-    
+    .footer-section-enlaces, .footer-section-datacompany, .footer-section-social {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container a {
+        font-size: 12px;
+    }
+
+    .footer-section-copy {
+        font-size: 10px;
+    }
+}
