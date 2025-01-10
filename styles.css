@@ -143,16 +143,17 @@ ul li {
 .btn {
     padding: 10px 20px;
     border-radius: 5px;
-    color: #333;
-    border-color: transparent;
-    text-decoration: none;
-    font-weight: bold;
+    border-color: transparent;    
     background-color: rgb(250, 192, 117);
     width: 18%;
     display: flex;
     align-self: center;
 }
-
+.btn a{
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
 .btn:hover {
     background-color: #6a7d91;
     color: white;
@@ -178,7 +179,7 @@ ul li {
         font-weight: bold;
         text-align: justify;
         margin-right: 10px;
-        width: 310px;
+        
     }
 
     .btn {
@@ -656,7 +657,6 @@ ul li {
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
-
 }
 
 .animated-text {
@@ -809,7 +809,7 @@ ul li {
 }
 
 .content {
-   /*  width: 450px;*/
+    width: 450px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -890,6 +890,7 @@ textarea {
 @media screen and (max-width: 768px) {
     .content {
         padding: 10px 0px 10px 0px;
+        width: 320px;
     }
 
     .form-title {
@@ -1038,6 +1039,14 @@ footer {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+     
+}
+h4{
+    margin-bottom: 10px;
+}
+
+.inf-company{
+line-height: 30px;
 }
 
 .footer-container a:hover {
