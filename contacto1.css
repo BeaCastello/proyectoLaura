@@ -137,10 +137,10 @@ h3 {
     .navlinks {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: rgb(216, 193, 175);
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 75px;
         left: 0;
     }
 
@@ -154,6 +154,7 @@ h3 {
 
     .hamburguesa {
         display: block;
+        color:rgb(236, 131, 12);
     }
 
     .navlinks li {
@@ -164,6 +165,10 @@ h3 {
     .submenu {
         position: static;
         padding: 0;
+    }
+    .banner-text h1 {
+        font-size: 3.4rem;
+        color:rgb(236, 131, 12);
     }
 }
 
@@ -257,6 +262,7 @@ h3 {
     flex-wrap: wrap;
     min-height: 100vh;
     position: relative;
+   
 }
 
 /* Columna izquierda (Formulario) */
@@ -409,14 +415,17 @@ width: 120px;
 
 /* Responsivo */
 @media (max-width: 768px) {
+    .contact-form {
+        margin-top: 20px;
+    }
     
     .contact-section {
         flex-direction: column;
     }
 
     .contact-info {
-        top: 0;
-        /* Restaurar posición en móviles */
+        margin-top: 20px;
+       
     }
 }
 /* Estilos footer */
