@@ -143,17 +143,19 @@ ul li {
 .btn {
     padding: 10px 20px;
     border-radius: 5px;
-    border-color: transparent;    
+    border-color: transparent;
     background-color: rgb(250, 192, 117);
     width: 18%;
     display: flex;
     align-self: center;
 }
-.btn a{
+
+.btn a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
 }
+
 .btn:hover {
     background-color: #6a7d91;
     color: white;
@@ -179,7 +181,7 @@ ul li {
         font-weight: bold;
         text-align: justify;
         margin-right: 10px;
-        
+
     }
 
     .btn {
@@ -814,7 +816,6 @@ ul li {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-   /* margin-left: 19px;*/
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -893,7 +894,7 @@ textarea {
         width: 320px;
     }
 
-    .form-title {
+        .form-title {
         font-size: 20px;
     }
 
@@ -926,6 +927,11 @@ textarea {
 
     .sendButton {
         font-size: 12px;
+    }
+    .container-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -1039,22 +1045,25 @@ footer {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-     
+
 }
-h4{
+
+h4 {
     margin-bottom: 10px;
 }
 
-.inf-company{
-line-height: 30px;
+.inf-company {
+    line-height: 30px;
 }
 
 .footer-container a:hover {
     text-decoration: underline;
 }
 
-.footer-section-enlaces, .footer-section-datacompany, .footer-section-social {
-    flex: 1 1 200px; 
+.footer-section-enlaces,
+.footer-section-datacompany,
+.footer-section-social {
+    flex: 1 1 200px;
     min-width: 150px;
 }
 
@@ -1079,7 +1088,9 @@ line-height: 30px;
         text-align: center;
     }
 
-    .footer-section-enlaces, .footer-section-datacompany, .footer-section-social {
+    .footer-section-enlaces,
+    .footer-section-datacompany,
+    .footer-section-social {
         flex: 1 1 100%;
         margin-bottom: 20px;
     }

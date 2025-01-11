@@ -263,7 +263,7 @@ h3 {
 .contact-form {
     flex: 1;
     padding: 30px;
-    background-color: #343c44;
+    background-color: rgb(72, 36, 40);
     color: rgb(248, 247, 247);
     margin-top: 60px;
 }
@@ -417,5 +417,87 @@ width: 120px;
     .contact-info {
         top: 0;
         /* Restaurar posición en móviles */
+    }
+}
+/* Estilos footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.inf-company {
+    line-height: 30px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-section-enlaces,
+.footer-section-datacompany,
+.footer-section-social {
+    flex: 1 1 200px;
+    min-width: 150px;
+}
+
+.footer-section-copy {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Estilo para redes sociales */
+.footer-section-social a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+/* Responsivo: pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section-enlaces,
+    .footer-section-datacompany,
+    .footer-section-social {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container a {
+        font-size: 12px;
+    }
+
+    .footer-section-copy {
+        font-size: 10px;
     }
 }
