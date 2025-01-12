@@ -235,7 +235,7 @@ section {
     outline: none;
     padding: 10px 5px;
     font-size: 16px;
-    color: #a09c9c;
+    color: #202020;
     padding: 0.8rem;
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -372,6 +372,10 @@ h4 {
     .footer-container a {
         font-size: 12px;
     }
+    .form-section input,
+.form-section textarea {
+    width: 270px;
+}
 
     .footer-section-copy {
         font-size: 10px;

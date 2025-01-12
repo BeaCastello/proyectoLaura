@@ -16,18 +16,16 @@ document.addEventListener('click', (e) => {
 // Enlace con emailjs
 
 (function () {
-    emailjs.init("zbgwQc95PFCFL9D6Y");
+    emailjs.init("H75WbyQSMoVVgsGfI");
 })();
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_j7wbf3i', 'template_bjg3pgj', this)
+    emailjs.sendForm("service_ghupzau","template_0aug3ln", this)
         .then(function () {
             alert('Correo enviado con éxito!');
         }, function (error) {
             alert('Error al enviar el correo: ' + JSON.stringify(error));
         });
 });
-
-

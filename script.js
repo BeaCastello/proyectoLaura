@@ -63,13 +63,13 @@ function showSlide(index) {
 // Enlace con emailjs
 
 (function () {
-    emailjs.init("zbgwQc95PFCFL9D6Y");
+    emailjs.init("H75WbyQSMoVVgsGfI");
 })();
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_e4rgq0q', 'template_bjg3pgj', this)
+    emailjs.sendForm("service_cov3d0q","template_hb4zrx5", this)
         .then(function () {
             alert('Correo enviado con éxito!');
         }, function (error) {
@@ -81,24 +81,5 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
 
 
-function toggleChatPopup() {
-    const popup = document.getElementById('chatPopup');
-    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
-}
-
-(function () {
-    emailjs.init("zbgwQc95PFCFL9D6Y");
-})();
-
-document.getElementById('input-container').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    emailjs.sendForm("service_o466etn","template_rzjqc3b"), this
-        .then(function () {
-            alert('Correo enviado con éxito!');
-        }, function (error) {
-            alert('Error al enviar el correo: ' + JSON.stringify(error));
-        });
-    });
 
     
