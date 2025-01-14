@@ -460,11 +460,6 @@ ul li {
     line-height: 25px;
 }
 
-.left-section {
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
 
 .right-section {
     margin-right: 57px;
@@ -499,6 +494,12 @@ ul li {
     }
 
 @media (max-width: 768px) {
+    .container {
+        display: flex;
+        margin-top: 40px;
+        gap: 20px;
+    }
+    
     .vertical-line {
         width: 2px;
         height: 100%;
@@ -517,11 +518,10 @@ ul li {
 
     .left-section {
         flex: 1;
-        margin-left: 8px;
-    }
+           }
 
     .right-section {
-        margin: 0;
+        margin-right: 40px;
         justify-content: center;
         flex-direction: column;
     }
@@ -541,9 +541,13 @@ ul li {
         display: flex;
         justify-content: center;
     }
+    .vertical-line {
+       margin: 2px;
+    }
+
     .image-card img {
-        width: 150px;
-        height: 90px;
+        width: 120px;
+        height: 80px;
     }
     .roots-title {
         margin-bottom: 20px;
@@ -565,6 +569,10 @@ ul li {
     }
     .image-card p {
         font-size: 14px;
+    }
+    .left-section {
+        flex: 1;
+        margin-left:5px;
     }
     
 
