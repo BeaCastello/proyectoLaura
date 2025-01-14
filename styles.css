@@ -124,18 +124,17 @@ ul li {
     display: flex;
     justify-content: center;
     color: rgb(247, 244, 240);
-    font-size: 40px;
-    margin-bottom: 13px;
+    font-size: 42px;
+    margin-bottom: 17px;
     font-weight: bold;
 }
 
 .inf {
     margin-bottom: 17px;
-    font-size: 20px;
+    font-size: 22px;
     color: rgb(247, 244, 240);
-    width: 60%;
     display: flex;
-    align-self: center;
+    justify-content: center;
     font-weight: bold;
     line-height: 28px;
 }
@@ -145,7 +144,6 @@ ul li {
     border-radius: 5px;
     border-color: transparent;
     background-color: rgb(250, 192, 117);
-    width: 18%;
     display: flex;
     align-self: center;
 }
@@ -161,12 +159,11 @@ ul li {
     color: white;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .banner-container>h1 {
         display: flex;
         justify-content: center;
         color: rgb(247, 244, 240);
-        font-size: 26px;
         margin-bottom: 15px;
         font-weight: bold;
         margin-right: 17px;
@@ -180,8 +177,7 @@ ul li {
         align-self: center;
         font-weight: bold;
         text-align: justify;
-        margin-right: 10px;
-
+        width: 80%;
     }
 
     .btn {
@@ -192,199 +188,122 @@ ul li {
     }
 }
 
-/* QUIENES SOMOS */
+@media (max-width: 468px) {
+    .banner-container>h1 {
+        font-size: 20px;
+    }
+}
 
-.quienes-somos {
+/* Quienes somos */
+
+.about-us {
     display: flex;
-    max-width: 100%;
-    gap: 120px;
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
 }
 
-.name-Laura {
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 30px;
-    margin-bottom: 20px;
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    align-items: center;
 }
 
-.photo-Laura {
-    width: 450px;
-    margin-right: 30px;
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
 }
 
 .separator {
-    margin-bottom: 20px;
-    max-width: 25%;
-    justify-content: center;
     height: 10px;
     background-color: rgb(250, 192, 117);
-    border: transparent;
-    margin-left: 30px;
-}
-
-.text-quienes-somos {
-    display: flex;
-    max-width: 90%;
-    text-align: justify;
-    margin-left: 30px;
-    line-height: 25px;
-
-}
-
-.text-contactenos {
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 30px;
+    width: 100%;
     margin-bottom: 20px;
-    margin-top: 10px;
+
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #555;
+    text-align: justify;
 }
 
 .contact {
-    margin-left: 30px;
-    line-height: 40px;
+    text-align: left;
     display: flex;
-    margin-bottom: 10px;
 }
 
-.info-contact {
-    display: flex;
-}
 
 #contact-link {
     text-decoration: none;
     color: black;
     transition: background-color 0.3s;
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
 }
 
 #contact-link1 {
     text-decoration: none;
     color: black;
     transition: background-color 0.3s;
-    margin-right: 30px;
+    margin-left: 10px;
+
 }
 
 
-#contact-link:hover {
-    color: rgb(224, 153, 60);
-}
-
-#contact-link1:hover {
-    color: rgb(224, 153, 60);
-    margin-right: 30px;
-}
-
-
-#redes-link {
-    color: black;
-    font-size: 16px;
-    margin-right: 10px;
-    margin-top: 9px;
-}
-
-#redes-link:hover {
-    color: rgb(224, 153, 60);
-}
-
-.text-contactenos {
-    font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
+/* Responsive Styles */
 
 @media (max-width: 768px) {
-    body {
-        width: 100%;
-    }
 
-    .quienes-somos {
-        display: flex;
+    .about-container {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
+        text-align: center;
     }
 
-    .contenido-izquierdo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .about-content {
+        text-align: center;
     }
 
-    .photo-Laura {
-        display: flex;
-        width: 160px;
-        justify-content: center;
-        width: 310px;
-        margin-left: 30px;
+    .about-image img {
+        max-width: 300px;
     }
+}
 
-    .contenido-derecho {
-        display: flex;
-        justify-content: center;
-    }
-
-    .separator {
-        margin-bottom: 10px;
-        width: 125px;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 20px;
-    }
-
-    .logo-img {
-        justify-content: center;
-        width: 170px;
-        display: flex;
-        margin-bottom: 20px;
-    }
-
-    .text-quienes-somos {
-        display: flex;
-        margin-right: 30px;
-        text-align: justify;
-    }
-
+@media (max-width: 468px) {
     .contact {
         display: flex;
         flex-direction: column;
-    }
-
-    .info-contact {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .fa-solid,
-    .fas {
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        margin-top: 10px;
-    }
-
-    #contact-link1 {
-        display: flex;
-
+        line-height: 30px;
     }
 
     .redes-sociales {
-        margin-left: 30px;
-        margin-top: -12px;
-    }
-
-    .text-contactenos {
-        margin-right: 25px;
+        display: flex;
+        left: 0px;
     }
 }
 
 
 /* Estilo inmigrante */
-.immigration-container {
-    margin-top: 40px;
+.immigration-container {   
     background-color: #2f3e4d;
     color: #ffffff;
     padding: 20px;
@@ -894,7 +813,7 @@ textarea {
         width: 320px;
     }
 
-        .form-title {
+    .form-title {
         font-size: 20px;
     }
 
@@ -928,6 +847,7 @@ textarea {
     .sendButton {
         font-size: 12px;
     }
+
     .container-contact {
         display: flex;
         justify-content: center;
