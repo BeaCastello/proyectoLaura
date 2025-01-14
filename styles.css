@@ -301,7 +301,7 @@ ul li {
 
 
 /* Estilo inmigrante */
-.immigration-container {   
+.immigration-container {
     background-color: #2f3e4d;
     color: #ffffff;
     padding: 20px;
@@ -435,7 +435,7 @@ ul li {
 }
 
 .container {
-    display: flex;      
+    display: flex;
     margin-top: 40px;
     gap: 40px;
 }
@@ -444,6 +444,7 @@ ul li {
     flex: 1;
     margin-left: 30px;
 }
+
 .roots-title {
     margin-bottom: 20px;
 }
@@ -495,20 +496,21 @@ ul li {
     margin-top: 15px;
     font-weight: bold;
     margin-bottom: 15px;
-}
+    }
 
 @media (max-width: 768px) {
     .vertical-line {
         width: 2px;
         height: 100%;
-        background-color: #000;       
-        display: flex;        
+        background-color: #000;
+        display: flex;
     }
+
     .image-card img {
         width: 200px;
         height: 120px;
     }
-    
+
     .image-card {
         transition: transform 0.5s ease-in-out;
     }
@@ -521,45 +523,53 @@ ul li {
     .right-section {
         margin: 0;
         justify-content: center;
-        flex-direction: column;         
+        flex-direction: column;
     }
-    
+
     .image-card p {
         margin-bottom: 30px;
-    }   
+    }
 }
+
 @media (max-width: 468px) {
-    .vertical-line {
-        width: 2px;
-        height: 100%;
-        background-color: #000;       
-        display: flex;        
+    .container {
+        display: flex;
+        gap: 10px;
+    }
+    .main-image {
+        width: 210px;
+        display: flex;
+        justify-content: center;
     }
     .image-card img {
-        width: 200px;
-        height: 120px;
+        width: 150px;
+        height: 90px;
+    }
+    .roots-title {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: justify;
     }
     
-    .image-card {
-        transition: transform 0.5s ease-in-out;
+    .roots-title1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: justify;
     }
-
-    .left-section {
-        flex: 1;
-        margin-left: 28px;
+    .roots-description {
+        font-size: 14px;
+        width: 100%;
     }
-
-    .right-section {
-        margin: 0;
-        justify-content: center;
-        flex-direction: column;         
-    }
-    
     .image-card p {
-        margin-bottom: 30px;
-    }   
-}
+        font-size: 14px;
+    }
+    
 
+}
+    
 /* Texto animado */
 .animated-text-container {
     position: relative;
